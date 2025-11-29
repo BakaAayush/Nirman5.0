@@ -21,6 +21,8 @@ CMakeFiles/secure_iot.dir/main.c.obj: \
  C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/riscv-none-elf/include/sys/_locale.h \
  C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/riscv-none-elf/include/strings.h \
  C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/riscv-none-elf/include/sys/string.h \
+ C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/riscv-none-elf/include/ctype.h \
+ C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/riscv-none-elf/include/math.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_stdlib_headers\include/pico/stdlib.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_base_headers\include/pico.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_base_headers\include/pico/types.h \
@@ -76,4 +78,12 @@ CMakeFiles/secure_iot.dir/main.c.obj: \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_structs\include/hardware/structs/resets.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/regs/resets.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_stdio_usb\include/pico/stdio_usb.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_multicore\include/pico/multicore.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_sync\include/pico/sync.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_sync\include/pico/sem.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_sync\include/pico/lock_core.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_sync\include/hardware/sync.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_sync_spin_lock\include/hardware/sync/spin_lock.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_sync\include/pico/mutex.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_sync\include/pico/critical_section.h \
  D:\Nirman\Nirman5.0\Chetak\firmware_riscv\crypto/aes.h

@@ -1,7 +1,6 @@
-CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.obj: \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_flash\flash.c \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_flash\include/pico/flash.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_base_headers\include/pico.h \
+CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.obj: \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_multicore\multicore.c \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_multicore\include/pico/multicore.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_base_headers\include/pico/types.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_base_headers\include/pico/assert.h \
  C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/lib/gcc/riscv-none-elf/15.2.0/include/stdbool.h \
@@ -18,6 +17,11 @@ CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico
  C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/riscv-none-elf/include/sys/_intsup.h \
  C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/riscv-none-elf/include/sys/_stdint.h \
  C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/lib/gcc/riscv-none-elf/15.2.0/include/stddef.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_sync\include/pico/sync.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_sync\include/pico/sem.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_sync\include/pico/lock_core.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_base_headers\include/pico.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_base_headers\include/pico/types.h \
  D:\Nirman\Nirman5.0\Chetak\firmware_riscv\build\generated\pico_base/pico/version.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_base_headers\include/pico/config.h \
  D:\Nirman\Nirman5.0\Chetak\firmware_riscv\build\generated\pico_base/pico/config_autogen.h \
@@ -26,7 +30,6 @@ CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_platform_compiler\include/pico/platform/compiler.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/platform_defs.h \
  C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/riscv-none-elf/include/sys/cdefs.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_base_headers\include/pico/types.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_platform_sections\include/pico/platform/sections.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_platform_panic\include/pico/platform/panic.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_platform_common\include/pico/platform/common.h \
@@ -34,25 +37,28 @@ CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/regs/sio.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/regs/rvcsr.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_base_headers\include/pico/error.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_sync\include/hardware/sync.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_time\include/pico/time.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_timer\include/hardware/timer.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_structs\include/hardware/structs/timer.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_base\include/hardware/address_mapped.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_structs\include/hardware/structs/accessctrl.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/regs/accessctrl.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/regs/timer.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/regs/intctrl.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_sync\include/hardware/sync.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_hazard3\include/hardware/hazard3.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_riscv\include/hardware/riscv.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_hazard3\include/hardware/hazard3/features.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_hazard3\include/hardware/hazard3/instructions.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_sync_spin_lock\include/hardware/sync/spin_lock.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_multicore\include/pico/multicore.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_sync\include/pico/sync.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_sync\include/pico/sem.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_sync\include/pico/lock_core.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_time\include/pico/time.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_timer\include/hardware/timer.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_structs\include/hardware/structs/timer.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/regs/timer.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/regs/intctrl.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_sync\include/pico/mutex.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_sync\include/pico/critical_section.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_structs\include/hardware/structs/sio.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_structs\include/hardware/structs/interp.h
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_structs\include/hardware/structs/interp.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_irq\include/hardware/irq.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\pico_platform\include/pico/platform/cpu_regs.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_runtime_init\include/pico/runtime_init.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_runtime\include/pico/runtime.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_structs\include/hardware/structs/psm.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/regs/psm.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\hardware_claim\include/hardware/claim.h

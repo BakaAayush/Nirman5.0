@@ -41,4 +41,20 @@ CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/regs/sio.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/regs/rvcsr.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_base_headers\include/pico/error.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_malloc\include/pico/malloc.h
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_malloc\include/pico/malloc.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_sync\include/pico/mutex.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_sync\include/pico/lock_core.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_time\include/pico/time.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_timer\include/hardware/timer.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_structs\include/hardware/structs/timer.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_base\include/hardware/address_mapped.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_structs\include/hardware/structs/accessctrl.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/regs/accessctrl.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/regs/timer.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/regs/intctrl.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_sync\include/hardware/sync.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_hazard3\include/hardware/hazard3.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_riscv\include/hardware/riscv.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_hazard3\include/hardware/hazard3/features.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_hazard3\include/hardware/hazard3/instructions.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_sync_spin_lock\include/hardware/sync/spin_lock.h

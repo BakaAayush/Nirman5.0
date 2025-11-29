@@ -1534,6 +1534,30 @@ C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\secure_iot.dir\build.make CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.s
 .PHONY : C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.s
 
+C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.obj: C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.obj
+.PHONY : C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.obj
+
+# target to build an object file
+C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\secure_iot.dir\build.make CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.obj
+.PHONY : C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.obj
+
+C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.i: C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.i
+
+# target to preprocess a source file
+C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\secure_iot.dir\build.make CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.i
+
+C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.s: C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.s
+
+# target to generate assembly for a file
+C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\secure_iot.dir\build.make CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.s
+
 C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.obj: C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.obj
 .PHONY : C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.obj
 
@@ -2099,6 +2123,9 @@ help:
 	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.obj
 	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.i
 	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.s
+	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.obj
+	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.i
+	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.s
 	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.obj
 	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.i
 	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.s

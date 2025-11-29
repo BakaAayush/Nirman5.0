@@ -1103,6 +1103,20 @@ CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s"
 	C:\riscv\xpack-riscv-none-elf-gcc-15.2.0-1\bin\riscv-none-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c -o CMakeFiles\secure_iot.dir\C_\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.s
 
+CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.obj: CMakeFiles/secure_iot.dir/flags.make
+CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.obj: C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c
+CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.obj: CMakeFiles/secure_iot.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Nirman\Nirman5.0\Chetak\firmware_riscv\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.obj"
+	C:\riscv\xpack-riscv-none-elf-gcc-15.2.0-1\bin\riscv-none-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.obj -MF CMakeFiles\secure_iot.dir\C_\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_multicore\multicore.c.obj.d -o CMakeFiles\secure_iot.dir\C_\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_multicore\multicore.c.obj -c C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_multicore\multicore.c
+
+CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.i"
+	C:\riscv\xpack-riscv-none-elf-gcc-15.2.0-1\bin\riscv-none-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_multicore\multicore.c > CMakeFiles\secure_iot.dir\C_\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_multicore\multicore.c.i
+
+CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.s"
+	C:\riscv\xpack-riscv-none-elf-gcc-15.2.0-1\bin\riscv-none-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_multicore\multicore.c -o CMakeFiles\secure_iot.dir\C_\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_multicore\multicore.c.s
+
 # Object files for target secure_iot
 secure_iot_OBJECTS = \
 "CMakeFiles/secure_iot.dir/main.c.obj" \
@@ -1178,7 +1192,8 @@ secure_iot_OBJECTS = \
 "CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.obj" \
 "CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.obj" \
 "CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.obj" \
-"CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
+"CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
+"CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.obj"
 
 # External object files for target secure_iot
 secure_iot_EXTERNAL_OBJECTS =
@@ -1257,12 +1272,13 @@ secure_iot.elf: CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/lib
 secure_iot.elf: CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.obj
 secure_iot.elf: CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.obj
 secure_iot.elf: CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+secure_iot.elf: CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.obj
 secure_iot.elf: CMakeFiles/secure_iot.dir/build.make
 secure_iot.elf: pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.obj
 secure_iot.elf: C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/rp2350/memmap_default.ld
 secure_iot.elf: CMakeFiles/secure_iot.dir/objects1.rsp
 secure_iot.elf: CMakeFiles/secure_iot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Nirman\Nirman5.0\Chetak\firmware_riscv\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Linking CXX executable secure_iot.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Nirman\Nirman5.0\Chetak\firmware_riscv\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Linking CXX executable secure_iot.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\secure_iot.dir\link.txt --verbose=$(VERBOSE)
 	C:\riscv\xpack-riscv-none-elf-gcc-15.2.0-1\bin\riscv-none-elf-objdump.exe -h D:/Nirman/Nirman5.0/Chetak/firmware_riscv/build/secure_iot.elf > secure_iot.dis
 	C:\riscv\xpack-riscv-none-elf-gcc-15.2.0-1\bin\riscv-none-elf-objdump.exe -d D:/Nirman/Nirman5.0/Chetak/firmware_riscv/build/secure_iot.elf >> secure_iot.dis

@@ -34,13 +34,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 21,
+				"line" : 38,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 45,
+				"line" : 74,
 				"parent" : 0
 			},
 			{
@@ -58,7 +58,7 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 39,
+				"line" : 66,
 				"parent" : 0
 			},
 			{
@@ -79,7 +79,7 @@
 			{
 				"command" : 6,
 				"file" : 0,
-				"line" : 29,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
@@ -91,7 +91,7 @@
 			{
 				"command" : 7,
 				"file" : 0,
-				"line" : 26,
+				"line" : 44,
 				"parent" : 0
 			}
 		]
@@ -261,10 +261,6 @@
 				},
 				{
 					"backtrace" : 5,
-					"define" : "LIB_PICO_STDIO_UART=1"
-				},
-				{
-					"backtrace" : 5,
 					"define" : "LIB_PICO_STDIO_USB=1"
 				},
 				{
@@ -330,6 +326,10 @@
 				{
 					"backtrace" : 9,
 					"define" : "PICO_DEFAULT_UART=1"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "PICO_DEFAULT_UART_BAUD_RATE=9600"
 				},
 				{
 					"backtrace" : 9,
@@ -634,11 +634,6 @@
 				{
 					"backtrace" : 5,
 					"isSystem" : true,
-					"path" : "C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
 					"path" : "C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/include"
 				},
 				{
@@ -766,8 +761,7 @@
 				70,
 				71,
 				72,
-				73,
-				74
+				73
 			]
 		},
 		{
@@ -933,10 +927,6 @@
 				},
 				{
 					"backtrace" : 5,
-					"define" : "LIB_PICO_STDIO_UART=1"
-				},
-				{
-					"backtrace" : 5,
 					"define" : "LIB_PICO_STDIO_USB=1"
 				},
 				{
@@ -1002,6 +992,10 @@
 				{
 					"backtrace" : 9,
 					"define" : "PICO_DEFAULT_UART=1"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "PICO_DEFAULT_UART_BAUD_RATE=9600"
 				},
 				{
 					"backtrace" : 9,
@@ -1302,11 +1296,6 @@
 					"backtrace" : 5,
 					"isSystem" : true,
 					"path" : "C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
-					"path" : "C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/include"
 				},
 				{
 					"backtrace" : 5,
@@ -1547,10 +1536,6 @@
 				},
 				{
 					"backtrace" : 5,
-					"define" : "LIB_PICO_STDIO_UART=1"
-				},
-				{
-					"backtrace" : 5,
 					"define" : "LIB_PICO_STDIO_USB=1"
 				},
 				{
@@ -1616,6 +1601,10 @@
 				{
 					"backtrace" : 9,
 					"define" : "PICO_DEFAULT_UART=1"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "PICO_DEFAULT_UART_BAUD_RATE=9600"
 				},
 				{
 					"backtrace" : 9,
@@ -1916,11 +1905,6 @@
 					"backtrace" : 5,
 					"isSystem" : true,
 					"path" : "C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
-					"path" : "C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/include"
 				},
 				{
 					"backtrace" : 5,
@@ -2198,8 +2182,7 @@
 				70,
 				71,
 				72,
-				73,
-				74
+				73
 			]
 		},
 		{
@@ -2507,12 +2490,6 @@
 			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 5,
-			"compileGroupIndex" : 0,
-			"path" : "C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c",
 			"sourceGroupIndex" : 0
 		},
 		{

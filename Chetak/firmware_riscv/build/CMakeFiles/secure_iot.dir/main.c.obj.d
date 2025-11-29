@@ -75,8 +75,5 @@ CMakeFiles/secure_iot.dir/main.c.obj: \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_resets\include/hardware/resets.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_structs\include/hardware/structs/resets.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/regs/resets.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_stdio_uart\include/pico/stdio_uart.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_stdio_usb\include/pico/stdio_usb.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_structs\include/hardware/structs/systick.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/regs/m33.h \
  D:\Nirman\Nirman5.0\Chetak\firmware_riscv\crypto/aes.h

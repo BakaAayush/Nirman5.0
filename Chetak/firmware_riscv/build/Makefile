@@ -1750,30 +1750,6 @@ C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\secure_iot.dir\build.make CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.s
 
-C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.obj: C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.obj
-
-# target to build an object file
-C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\secure_iot.dir\build.make CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-
-C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.i: C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.i
-
-# target to preprocess a source file
-C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\secure_iot.dir\build.make CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-
-C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.s: C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.s
-
-# target to generate assembly for a file
-C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\secure_iot.dir\build.make CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-
 C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.obj: C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 .PHONY : C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.obj
 
@@ -2150,9 +2126,6 @@ help:
 	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.obj
 	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.i
 	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.s
-	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.obj
-	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.i
-	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.s
 	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.obj
 	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.i
 	@echo ... C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.s

@@ -64,5 +64,8 @@ CMakeFiles/secure_iot.dir/C_/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\hardware_resets\include/hardware/resets.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_structs\include/hardware/structs/resets.h \
  C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2350\hardware_regs\include/hardware/regs/resets.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_stdio_uart\include/pico/stdio_uart.h \
- C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_stdio_usb\include/pico/stdio_usb.h
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\rp2_common\pico_stdio_usb\include/pico/stdio_usb.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_binary_info\include/pico/binary_info.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_binary_info\include/pico/binary_info/defs.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_binary_info\include/pico/binary_info/structure.h \
+ C:\Users\panda\.pico-sdk\sdk\2.2.0\src\common\pico_binary_info\include/pico/binary_info/code.h

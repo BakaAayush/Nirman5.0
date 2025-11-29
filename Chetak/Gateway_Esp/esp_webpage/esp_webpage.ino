@@ -8,7 +8,7 @@ const char* WIFI_SSID = "Liku";
 const char* WIFI_PASSWORD = "9337028208";
 const uint16_t WEB_SERVER_PORT = 80;
 
-// BAUD RATE (Must match Pico)
+// MUST match the Pico's baud rate (9600)
 const uint32_t SERIAL_BAUD_RATE = 9600; 
 
 // ============================================
@@ -19,99 +19,108 @@ ESP8266WebServer server(WEB_SERVER_PORT);
 // ============================================
 // STATE VARIABLES
 // ============================================
-String latestData = "Waiting for data...";
-String securityStatus = "SECURE";
-String submittedData = "Nothing submitted yet.";
+String latestData = "Waiting for input...";
+String securityStatus = "SYSTEM SECURE";
+String submittedData = "No commands sent yet.";
+String statusColor = "#4CAF50"; // Start Green
+String statusIcon = "🔒";
 
 // ============================================
 // HTML GENERATION
 // ============================================
 String generateWebPage() {
-  bool isSecure = (securityStatus == "SECURE");
-  String statusColor = isSecure ? "#4CAF50" : "#f44336"; // Green or Red
-  String statusIcon = isSecure ? "🔒" : "⚠️";
-  
   String html = R"rawliteral(
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="3">
-    <title>IoT Security Dashboard</title>
+    <meta http-equiv="refresh" content="2">
+    <title>RISC-V Security Monitor</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             min-height: 100vh; padding: 20px; color: #333;
         }
-        .container { max-width: 1200px; margin: 0 auto; }
-        header { text-align: center; color: white; margin-bottom: 30px; }
-        header h1 { font-size: 2.5em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
-        .dashboard-grid {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .card {
-            background: white; border-radius: 15px; padding: 25px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        .card-header {
-            display: flex; align-items: center; gap: 10px;
-            margin-bottom: 15px; border-bottom: 2px solid #f0f0f0; padding-bottom: 15px;
-        }
-        .data-display {
-            background: #f8f9fa; padding: 20px; border-radius: 10px;
-            border-left: 4px solid #667eea; font-family: 'Courier New', monospace;
-            word-wrap: break-word; color: #333; font-weight: bold;
-        }
-        .status-card { background: )rawliteral" + statusColor + R"rawliteral(; color: white; text-align: center; }
-        .status-card .card-header { border-bottom-color: rgba(255,255,255,0.3); justify-content: center; }
-        .status-card h2 { color: white; }
-        .status-display { font-size: 2em; font-weight: bold; padding: 20px; }
+        .container { max-width: 1000px; margin: 0 auto; }
         
-        button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white; padding: 12px 30px; border: none; border-radius: 25px;
-            cursor: pointer; font-size: 16px; width: 100%; margin-top: 10px;
+        header { text-align: center; color: white; margin-bottom: 30px; }
+        header h1 { font-size: 2.2em; text-shadow: 0 2px 4px rgba(0,0,0,0.3); margin-bottom: 5px; }
+        header p { opacity: 0.8; font-size: 1.1em; }
+
+        .dashboard-grid {
+            display: grid; grid-template-columns: 1fr; gap: 20px;
         }
-        textarea { width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd; }
+        
+        .card {
+            background: white; border-radius: 12px; padding: 25px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .status-card {
+            background: )rawliteral" + statusColor + R"rawliteral(;
+            color: white; text-align: center;
+            transition: background 0.5s ease;
+        }
+        .status-display { font-size: 2.5em; font-weight: bold; margin: 10px 0; }
+        .status-sub { font-size: 1.2em; opacity: 0.9; }
+
+        .data-box {
+            background: #f1f3f4; padding: 15px; border-radius: 8px;
+            font-family: 'Courier New', monospace; font-weight: bold;
+            color: #333; border-left: 5px solid #2a5298;
+            margin-top: 10px; word-break: break-all;
+        }
+
+        /* Form Styles */
+        form { display: flex; gap: 10px; margin-top: 15px; }
+        input[type="text"] {
+            flex-grow: 1; padding: 12px; border: 2px solid #ddd;
+            border-radius: 6px; font-size: 16px;
+        }
+        button {
+            background: #2a5298; color: white; border: none;
+            padding: 12px 25px; border-radius: 6px; cursor: pointer;
+            font-weight: bold; font-size: 16px;
+        }
+        button:hover { background: #1e3c72; }
+        
+        .helper-text { font-size: 0.9em; color: #666; margin-top: 5px; }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>🔐 Secure IoT Dashboard</h1>
-            <p>Hardware-Isolated RISC-V Monitoring</p>
+            <h1>🛡️ RISC-V Dual-Core Monitor</h1>
+            <p>Hardware-Enforced Sandbox Protection</p>
         </header>
         
+        <!-- SECURITY STATUS (Top Priority) -->
+        <div class="card status-card">
+            <div style="font-size: 40px;">)rawliteral" + statusIcon + R"rawliteral(</div>
+            <div class="status-display">)rawliteral" + securityStatus + R"rawliteral(</div>
+            <div class="status-sub">Core 0 Watchdog Status</div>
+        </div>
+
         <div class="dashboard-grid">
-            <!-- Encrypted Data -->
+            <!-- INPUT FORM -->
             <div class="card">
-                <div class="card-header"><span>📡</span><h2>Encrypted Data</h2></div>
-                <div class="data-display">)rawliteral" + latestData + R"rawliteral(</div>
-            </div>
-            
-            <!-- Security Status -->
-            <div class="card status-card">
-                <div class="card-header"><span>)rawliteral" + statusIcon + R"rawliteral(</span><h2>Status</h2></div>
-                <div class="status-display">)rawliteral" + securityStatus + R"rawliteral(</div>
-            </div>
-            
-            <!-- Submit Data -->
-            <div class="card">
-                <div class="card-header"><span>📝</span><h2>Submit Data</h2></div>
+                <h2>📝 Inject Command</h2>
+                <p>Send text to the Sandbox (Core 1). Type <b>ATTACK</b> to simulate malware.</p>
                 <form action="/submit" method="POST">
-                    <textarea name="userdata" placeholder="Enter data..." required></textarea>
-                    <button type="submit">Submit</button>
+                    <input type="text" name="userdata" placeholder="Type here..." required autofocus>
+                    <button type="submit">SEND</button>
                 </form>
+                <div class="helper-text">Last Sent: <strong>)rawliteral" + submittedData + R"rawliteral(</strong></div>
             </div>
 
-             <!-- Last Submitted -->
+            <!-- OUTPUT DATA -->
             <div class="card">
-                <div class="card-header"><span>📋</span><h2>Last Submitted</h2></div>
-                <div class="data-display">)rawliteral" + submittedData + R"rawliteral(</div>
+                <h2>📡 Core 1 Output</h2>
+                <p>Encrypted result returned by the Sandbox:</p>
+                <div class="data-box">)rawliteral" + latestData + R"rawliteral(</div>
             </div>
         </div>
     </div>
@@ -131,8 +140,15 @@ void handleRoot() {
 void handleSubmit() {
   if (server.hasArg("userdata")) {
     submittedData = server.arg("userdata");
-    Serial.println("WEB INPUT: " + submittedData); // This sends data OUT to Pico (and USB)
+    submittedData.trim();
+    
+    // --- CRITICAL STEP ---
+    // Send the user input over GPIO 1 (TX) to the Pico!
+    // The Pico (Core 0) is listening for this.
+    Serial.println(submittedData); 
   }
+  
+  // Reload page to show "Last Sent"
   server.sendHeader("Location", "/");
   server.send(303);
 }
@@ -142,25 +158,21 @@ void handleSubmit() {
 // ============================================
 void setup() {
   // Initialize Hardware Serial (Pins 1 & 3)
-  // This handles BOTH USB Debugging AND Pico Communication
+  // This connects to Pico GP4/GP5
   Serial.begin(SERIAL_BAUD_RATE);
   
   delay(1000);
-  Serial.println("\n--- ESP8266 STARTED ---");
-
+  
   // Connect to WiFi
   WiFi.mode(WIFI_STA);
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
-    // We avoid printing dots '.' continuously to keep the Serial clean for the Pico
   }
   
-  // Print IP once (Pico will see this too, but should ignore it)
-  Serial.println("");
-  Serial.print("IP: ");
-  Serial.println(WiFi.localIP());
+  // Note: Since Serial is connected to Pico, IP is hard to see.
+  // Check your router for the device IP or unplug RX/TX momentarily to debug.
 
   server.on("/", handleRoot);
   server.on("/submit", HTTP_POST, handleSubmit);
@@ -174,20 +186,28 @@ void setup() {
 void loop() {
   server.handleClient();
 
-  // Listen for data from Pico on Hardware Serial
+  // Listen for messages from Pico (Core 0 or Core 1) on GPIO 3 (RX)
   if (Serial.available()) {
     String line = Serial.readStringUntil('\n');
     line.trim();
 
-    // 1. Encrypted Data
-    if (line.startsWith("DATA:")) {
-      latestData = line.substring(6); 
-      securityStatus = "SECURE";
-      // We don't print "Received" to Serial here to avoid feedback loops
-    }
-    // 2. Attack Alert
-    else if (line.indexOf("SECURITY ALERT") >= 0) {
-      securityStatus = "⚠️ ATTACK DETECTED";
+    if (line.length() > 0) {
+       
+       // 1. DATA: (Normal Encrypted Output from Core 1)
+       if (line.startsWith("DATA:")) {
+         latestData = line.substring(6); // Remove "DATA: "
+         securityStatus = "SYSTEM SECURE";
+         statusColor = "#4CAF50"; // Green
+         statusIcon = "🔒";
+       }
+       
+       // 2. SECURITY ALERT: (Warning from Core 0)
+       else if (line.indexOf("SECURITY ALERT") >= 0) {
+         securityStatus = "MALICIOUS INPUT DETECTED";
+         latestData = "--- PROCESS TERMINATED BY KERNEL ---";
+         statusColor = "#f44336"; // Red
+         statusIcon = "⚠️";
+       }
     }
   }
 }

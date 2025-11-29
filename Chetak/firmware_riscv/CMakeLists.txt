@@ -1,36 +1,14 @@
 cmake_minimum_required(VERSION 3.13)
 
-# =============================================================================
 # 1. PATH CONFIGURATION
-# =============================================================================
-
-# The Path to your Pico SDK (Keep this matching your installation)
 set(PICO_SDK_PATH "C:/Users/panda/.pico-sdk/sdk/2.2.0")
-
-# The Path to your NEW RISC-V Compiler
-# Note: We point to the folder *above* 'bin' so CMake can find the structure.
 set(PICO_TOOLCHAIN_PATH "C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1")
-
-# CRITICAL: The xPack compiler is named 'riscv-none-elf-gcc', but Pico SDK 
-# defaults to looking for 'riscv32-unknown-elf'. We must tell it the correct name.
 set(PICO_GCC_TRIPLE "riscv-none-elf")
 
-# =============================================================================
-# 2. BOARD & PLATFORM SETUP
-# =============================================================================
-
-# Target the Raspberry Pi Pico 2
+# 2. BOARD & PLATFORM
 set(PICO_BOARD pico2)
-
-# Force the chip into RISC-V Mode (This enables the secure sandbox features)
 set(PICO_PLATFORM rp2350-riscv)
-
-# Skip building the tool that caused the 'ld returned 116' crash
 set(PICO_NO_PICOTOOL 1)
-
-# =============================================================================
-# 3. PROJECT SETUP
-# =============================================================================
 
 include(pico_sdk_import.cmake)
 
@@ -40,21 +18,23 @@ set(CMAKE_CXX_STANDARD 17)
 
 pico_sdk_init()
 
-# =============================================================================
-# 4. EXECUTABLE & LIBRARIES
-# =============================================================================
-
 add_executable(secure_iot
     main.c
     crypto/aes.c
 )
 
-# Allow main.c to find aes.h
 target_include_directories(secure_iot PRIVATE crypto)
 
-# Enable USB Logging (so you can see "ATTACK DETECTED" messages)
+# --- CRITICAL CHANGE: SWITCH TO UART1 on GP4/GP5 ---
+target_compile_definitions(secure_iot PRIVATE
+  PICO_DEFAULT_UART=1           # Use UART Instance 1
+  PICO_DEFAULT_UART_TX_PIN=4    # Transmit on Pin 4
+  PICO_DEFAULT_UART_RX_PIN=5    # Receive on Pin 5
+)
+
+# Enable BOTH USB and UART so you can debug on laptop AND talk to ESP32
 pico_enable_stdio_usb(secure_iot 1)
-pico_enable_stdio_uart(secure_iot 0)
+pico_enable_stdio_uart(secure_iot 1)  # <--- MUST BE 1
 
 target_link_libraries(secure_iot
     pico_stdlib
@@ -62,5 +42,4 @@ target_link_libraries(secure_iot
     hardware_sync
 )
 
-# Generate the .uf2 file for flashing
 pico_add_extra_outputs(secure_iot)

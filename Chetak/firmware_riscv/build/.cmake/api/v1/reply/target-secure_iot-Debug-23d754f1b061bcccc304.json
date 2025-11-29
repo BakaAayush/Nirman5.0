@@ -34,13 +34,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 47,
+				"line" : 21,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 66,
+				"line" : 45,
 				"parent" : 0
 			},
 			{
@@ -58,7 +58,7 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 59,
+				"line" : 39,
 				"parent" : 0
 			},
 			{
@@ -78,6 +78,12 @@
 			},
 			{
 				"command" : 6,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
 				"file" : 2,
 				"line" : 93,
 				"parent" : 2
@@ -85,7 +91,7 @@
 			{
 				"command" : 7,
 				"file" : 0,
-				"line" : 53,
+				"line" : 26,
 				"parent" : 0
 			}
 		]
@@ -255,6 +261,10 @@
 				},
 				{
 					"backtrace" : 5,
+					"define" : "LIB_PICO_STDIO_UART=1"
+				},
+				{
+					"backtrace" : 5,
 					"define" : "LIB_PICO_STDIO_USB=1"
 				},
 				{
@@ -318,6 +328,18 @@
 					"define" : "PICO_CXX_ENABLE_EXCEPTIONS=0"
 				},
 				{
+					"backtrace" : 9,
+					"define" : "PICO_DEFAULT_UART=1"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "PICO_DEFAULT_UART_RX_PIN=5"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "PICO_DEFAULT_UART_TX_PIN=4"
+				},
+				{
 					"backtrace" : 5,
 					"define" : "PICO_NO_FLASH=0"
 				},
@@ -342,7 +364,7 @@
 					"define" : "PICO_RP2350=1"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"define" : "PICO_TARGET_NAME=\"secure_iot\""
 				},
 				{
@@ -353,7 +375,7 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 10,
+					"backtrace" : 11,
 					"path" : "D:/Nirman/Nirman5.0/Chetak/firmware_riscv/crypto"
 				},
 				{
@@ -612,6 +634,11 @@
 				{
 					"backtrace" : 5,
 					"isSystem" : true,
+					"path" : "C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
 					"path" : "C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/include"
 				},
 				{
@@ -739,7 +766,8 @@
 				70,
 				71,
 				72,
-				73
+				73,
+				74
 			]
 		},
 		{
@@ -905,6 +933,10 @@
 				},
 				{
 					"backtrace" : 5,
+					"define" : "LIB_PICO_STDIO_UART=1"
+				},
+				{
+					"backtrace" : 5,
 					"define" : "LIB_PICO_STDIO_USB=1"
 				},
 				{
@@ -968,6 +1000,18 @@
 					"define" : "PICO_CXX_ENABLE_EXCEPTIONS=0"
 				},
 				{
+					"backtrace" : 9,
+					"define" : "PICO_DEFAULT_UART=1"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "PICO_DEFAULT_UART_RX_PIN=5"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "PICO_DEFAULT_UART_TX_PIN=4"
+				},
+				{
 					"backtrace" : 5,
 					"define" : "PICO_NO_FLASH=0"
 				},
@@ -992,7 +1036,7 @@
 					"define" : "PICO_RP2350=1"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"define" : "PICO_TARGET_NAME=\"secure_iot\""
 				},
 				{
@@ -1003,7 +1047,7 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 10,
+					"backtrace" : 11,
 					"path" : "D:/Nirman/Nirman5.0/Chetak/firmware_riscv/crypto"
 				},
 				{
@@ -1258,6 +1302,11 @@
 					"backtrace" : 5,
 					"isSystem" : true,
 					"path" : "C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/include"
 				},
 				{
 					"backtrace" : 5,
@@ -1498,6 +1547,10 @@
 				},
 				{
 					"backtrace" : 5,
+					"define" : "LIB_PICO_STDIO_UART=1"
+				},
+				{
+					"backtrace" : 5,
 					"define" : "LIB_PICO_STDIO_USB=1"
 				},
 				{
@@ -1561,6 +1614,18 @@
 					"define" : "PICO_CXX_ENABLE_EXCEPTIONS=0"
 				},
 				{
+					"backtrace" : 9,
+					"define" : "PICO_DEFAULT_UART=1"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "PICO_DEFAULT_UART_RX_PIN=5"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "PICO_DEFAULT_UART_TX_PIN=4"
+				},
+				{
 					"backtrace" : 5,
 					"define" : "PICO_NO_FLASH=0"
 				},
@@ -1585,7 +1650,7 @@
 					"define" : "PICO_RP2350=1"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"define" : "PICO_TARGET_NAME=\"secure_iot\""
 				},
 				{
@@ -1596,7 +1661,7 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 10,
+					"backtrace" : 11,
 					"path" : "D:/Nirman/Nirman5.0/Chetak/firmware_riscv/crypto"
 				},
 				{
@@ -1851,6 +1916,11 @@
 					"backtrace" : 5,
 					"isSystem" : true,
 					"path" : "C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/include"
 				},
 				{
 					"backtrace" : 5,
@@ -2128,7 +2198,8 @@
 				70,
 				71,
 				72,
-				73
+				73,
+				74
 			]
 		},
 		{
@@ -2436,6 +2507,12 @@
 			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/panda/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -1,0 +1,104 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : {},
+				"path" : "C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/bin/riscv-none-elf-gcc.exe",
+				"version" : ""
+			},
+			"language" : "ASM",
+			"sourceFileExtensions" : 
+			[
+				"s",
+				"S",
+				"asm"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/lib/gcc/riscv-none-elf/15.2.0/include",
+						"C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/lib/gcc/riscv-none-elf/15.2.0/include-fixed",
+						"C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/riscv-none-elf/include"
+					],
+					"linkDirectories" : 
+					[
+						"C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/lib/gcc/riscv-none-elf/15.2.0",
+						"C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/lib/gcc",
+						"C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/riscv-none-elf/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : []
+				},
+				"path" : "C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/bin/riscv-none-elf-gcc.exe",
+				"version" : "15.2.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/riscv-none-elf/include/c++/15.2.0",
+						"C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/riscv-none-elf/include/c++/15.2.0/riscv-none-elf",
+						"C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/riscv-none-elf/include/c++/15.2.0/backward",
+						"C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/lib/gcc/riscv-none-elf/15.2.0/include",
+						"C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/lib/gcc/riscv-none-elf/15.2.0/include-fixed",
+						"C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/riscv-none-elf/include"
+					],
+					"linkDirectories" : 
+					[
+						"C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/lib/gcc/riscv-none-elf/15.2.0",
+						"C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/lib/gcc",
+						"C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/riscv-none-elf/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : []
+				},
+				"path" : "C:/riscv/xpack-riscv-none-elf-gcc-15.2.0-1/bin/riscv-none-elf-g++.exe",
+				"version" : "15.2.0"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm",
+				"ccm",
+				"cxxm",
+				"c++m"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

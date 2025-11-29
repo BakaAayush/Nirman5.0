@@ -39,7 +39,7 @@ void kernel_crypto_engine(uint8_t *data, int len) {
     // For this demo, we assume the sandbox sends data in multiples of 16 bytes.
     for (int i = 0; i < len; i += 16) {
         AES_ECB_encrypt(&ctx, data + i);
-    }
+    }   
 }
 
 // The Trap Handler: Catches Syscalls (ECALL) and Security Violations

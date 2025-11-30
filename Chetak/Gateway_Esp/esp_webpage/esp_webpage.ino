@@ -154,7 +154,7 @@ String generateWebPage() {
     <div class="container">
         <header>
             <h1>🛡️ Autonomous Security System</h1>
-            <p>AI-Powered Threat Detection | RISC-V Hardware Sandbox</p>
+            <p>RISC-V Hardware Sandbox | Real-Time Threat Detection</p>
         </header>
         
         <!-- SECURITY STATUS CARD -->
